@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Positions">
+        <item>""</item>
+        <item>"C"</item>
+        <item>"RW"</item>
+        <item>"LW"</item>
+        <item>"D"</item>
+    </string-array>
+    <string-array name="Brand">
+        <item>""</item>
+        <item>"Bauer"</item>
+        <item>"Warrior"</item>
+    </string-array>
+    <string-array name="Face">
+        <item>""</item>
+        <item>"Open"</item>
+        <item>"Open-Wedge"</item>
+        <item>"Slightly-Open"</item>
+        <item>"Mid"</item>
+        <item>"Mid-Heel"</item>
+        <item>"Heel"</item>
+        <item>"Mid-Toe"</item>
+    </string-array>
+    <string-array name="Toe">
+        <item>""</item>
+        <item>"Round"</item>
+        <item>"Square"</item>
+    </string-array>
+</resources>

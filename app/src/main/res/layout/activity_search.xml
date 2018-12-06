@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <Button
+        android:id="@+id/SearchButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="filterList"
+        android:text="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/FirstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="First Name: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/LastNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="Last Name: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/LastName"
+        app:layout_constraintStart_toStartOf="@+id/FirstNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/LastName" />
+
+    <TextView
+        android:id="@+id/PositionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Positions"
+        app:layout_constraintStart_toStartOf="@+id/LastNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/Positions" />
+
+    <Spinner
+        android:id="@+id/Positions"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Positions"
+        app:layout_constraintStart_toStartOf="@+id/LastName"
+        app:layout_constraintTop_toBottomOf="@+id/LastName" />
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/FirstNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/FirstNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/FirstNameLabel" />
+
+    <EditText
+        android:id="@+id/LastName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/FirstName"
+        app:layout_constraintTop_toBottomOf="@+id/FirstName" />
+
+    <TextView
+        android:id="@+id/BrandLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Brands"
+        app:layout_constraintStart_toStartOf="@+id/PositionLabel"
+        app:layout_constraintTop_toTopOf="@+id/Brands" />
+
+    <Spinner
+        android:id="@+id/Brands"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Brand"
+        app:layout_constraintStart_toStartOf="@+id/Positions"
+        app:layout_constraintTop_toBottomOf="@+id/Positions" />
+
+    <TextView
+        android:id="@+id/FaceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Faces"
+        app:layout_constraintStart_toStartOf="@+id/BrandLabel"
+        app:layout_constraintTop_toTopOf="@+id/Faces" />
+
+    <TextView
+        android:id="@+id/ToeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toe: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Toes"
+        app:layout_constraintStart_toStartOf="@+id/FaceLabel"
+        app:layout_constraintTop_toTopOf="@+id/Toes" />
+
+    <TextView
+        android:id="@+id/LieLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lie: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/MinLie"
+        app:layout_constraintStart_toStartOf="@+id/ToeLabel"
+        app:layout_constraintTop_toTopOf="@+id/MinLie" />
+
+    <Spinner
+        android:id="@+id/Faces"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Face"
+        app:layout_constraintStart_toStartOf="@+id/Brands"
+        app:layout_constraintTop_toBottomOf="@+id/Brands" />
+
+    <Spinner
+        android:id="@+id/Toes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Toe"
+        app:layout_constraintStart_toStartOf="@+id/Faces"
+        app:layout_constraintTop_toBottomOf="@+id/Faces" />
+
+    <EditText
+        android:id="@+id/MinLie"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Min"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Toes"
+        app:layout_constraintTop_toBottomOf="@+id/Toes" />
+
+    <EditText
+        android:id="@+id/MaxLie"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Max"
+        android:inputType="numberSigned"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/MinLie"
+        app:layout_constraintTop_toTopOf="@+id/MinLie" />
+
+</android.support.constraint.ConstraintLayout>

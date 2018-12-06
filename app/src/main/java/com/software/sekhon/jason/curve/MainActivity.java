@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private List<Player> players;
-    public static RecyclerView recyclerView;
-    public static RecyclerViewAdapter adapter;
+    public RecyclerView recyclerView;
+    public RecyclerViewAdapter adapter;
     AppDatabase db;
 
     @Override

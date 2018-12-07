@@ -56,6 +56,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         viewHolder.playerName.setText(players.get(i).lastName + ", " + players.get(i).firstName);
         viewHolder.position.setText(players.get(i).position);
         viewHolder.curveName.setText(players.get(i).brand + " " + players.get(i).curveName);
+        viewHolder.parentLayout.setId(i);
         viewHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

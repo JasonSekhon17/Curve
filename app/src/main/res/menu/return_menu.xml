@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SearchActivity">
     <item
-        android:id="@+id/action_back"
+        android:id="@+id/search_action_back"
+        android:icon="@drawable/ic_arrow_back_white_24dp"
         android:orderInCategory="200"
         android:title="Return"
-        android:icon="@drawable/ic_arrow_back_white_24dp"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>

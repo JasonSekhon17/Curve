@@ -72,7 +72,7 @@ public class Description extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_back) {
+        if (item.getItemId() == R.id.desc_action_back) {
             finish();
             return true;
         }
